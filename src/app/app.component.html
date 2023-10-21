@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+
+<div class="mt-5 ml-5">
+  <button (click)="decremento()" 
+    [class.bg-red-500]="numero < 0" 
+    [class.bg-amber-500]="numero >= 0 && numero <= 5" 
+    [class.bg-green-500]="numero > 5" 
+    [disabled]="numero <= -10" class="mr-5 w-20 h-8 rounded-md">-
+  </button>
+
+  <span>{{numero}}</span>
+
+  <button (click)="incremento()" 
+    [class.bg-red-500]="numero < 0" 
+    [class.bg-amber-500]="numero >= 0 && numero <= 5" 
+    [class.bg-green-500]="numero > 5" 
+    [disabled]="numero >= 10" class="ml-5 w-20 h-8 rounded-md" >+
+  </button>
+</div>

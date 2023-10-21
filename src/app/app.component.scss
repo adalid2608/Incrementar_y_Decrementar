@@ -1,0 +1,19 @@
+.red-button {
+    background-color: red;
+    color: white;
+  }
+  
+  .yellow-button {
+    background-color: yellow;
+  }
+  
+  .green-button {
+    background-color: green;
+    color: white;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
